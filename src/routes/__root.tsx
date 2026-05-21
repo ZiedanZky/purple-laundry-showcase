@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Purple Laundry" },
+      { name: "description", content: "Purple Laundry adalah jasa laundry yang melayani berbagai kebutuhan pencucian pakaian dan perlengkapan rumah tangga dengan hasil bersih, wangi, dan rapi." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Purple Laundry" },
+      { property: "og:description", content: "Purple Laundry adalah jasa laundry yang melayani berbagai kebutuhan pencucian pakaian dan perlengkapan rumah tangga dengan hasil bersih, wangi, dan rapi." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Purple Laundry" },
+      { name: "twitter:description", content: "Purple Laundry adalah jasa laundry yang melayani berbagai kebutuhan pencucian pakaian dan perlengkapan rumah tangga dengan hasil bersih, wangi, dan rapi." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/3bb6e3b8-9faf-4041-842c-030d01417350" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/3bb6e3b8-9faf-4041-842c-030d01417350" },
     ],
     links: [
       {
