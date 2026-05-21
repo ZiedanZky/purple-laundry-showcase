@@ -1,26 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
+import PurpleLanding from "@/components/PurpleLanding";
 
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      { title: "Purple Laundry — Jasa Laundry Bersih & Wangi di Jakarta Timur" },
+      { name: "description", content: "Purple Laundry melayani cuci kiloan, satuan, express, selimut, bed cover, karpet, gordyn, tas dan lainnya. Hubungi via WhatsApp 081283236030." },
+      { property: "og:title", content: "Purple Laundry — Jasa Laundry Bersih & Wangi" },
+      { property: "og:description", content: "Layanan laundry rumahan di Duren Sawit, Jakarta Timur. Bersih, rapi, terpercaya." },
+    ],
+  }),
+  component: PurpleLanding,
 });
-
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
-function Index() {
-  return <PlaceholderIndex />;
-}
